@@ -76,4 +76,11 @@
 </symbol>
 
 </defs>
+
+<symbol id="icon-check" viewBox="0 0 10 8">
+  <path d="M8.5 0L3.5 5L1.5 3L0 4.5L3.5 8L10 1.5L8.5 0Z" fill="currentColor"/>
+</symbol>
+<symbol id="icon-send" viewBox="0 0 24 24">
+  <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+</symbol>
 </svg>
