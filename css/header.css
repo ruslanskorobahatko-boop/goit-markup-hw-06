@@ -1,4 +1,6 @@
-/* ====================== HEADER ====================== */
+/* ====================== HEADER CSS ====================== */
+/* Стилі для хедера та навігації */
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -7,6 +9,7 @@
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -82,7 +85,7 @@
   color: #404bbf;
 }
 
-/* ====================== ADDRESS ====================== */
+/* ADDRESS */
 .header-address {
   font-style: normal;
   margin-left: auto;
