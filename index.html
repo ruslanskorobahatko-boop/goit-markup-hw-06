@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -559,47 +559,5 @@
         </form>
       </div>
     </div>
-
-    <script>
-      (function () {
-        const backdrop = document.querySelector(".backdrop");
-        const closeBtn = document.querySelector(".modal-close-btn");
-        const orderBtn = document.querySelector(".hero-button");
-
-        function openModal() {
-          backdrop.classList.add("is-open");
-        }
-
-        function closeModal() {
-          backdrop.classList.remove("is-open");
-        }
-
-        if (orderBtn) {
-          orderBtn.addEventListener("click", openModal);
-        }
-
-        if (closeBtn) {
-          closeBtn.addEventListener("click", closeModal);
-        }
-
-        if (backdrop) {
-          backdrop.addEventListener("click", function (event) {
-            if (event.target === backdrop) {
-              closeModal();
-            }
-          });
-        }
-
-        document.addEventListener("keydown", function (event) {
-          if (
-            event.key === "Escape" &&
-            backdrop &&
-            backdrop.classList.contains("is-open")
-          ) {
-            closeModal();
-          }
-        });
-      })();
-    </script>
   </body>
 </html>
