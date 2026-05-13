@@ -1,13 +1,9 @@
-/* ====================== COMMON CSS ====================== */
-/* Скидання стилів, базові налаштування та утиліти */
-
-/* RESET & BASE */
+/* ====================== RESET & BASE ====================== */
 p,
 ul {
   margin: 0;
   padding: 0;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -44,14 +40,12 @@ body {
   line-height: 1.5;
   background: #fff;
 }
-
-/* CONTAINER */
+/* ====================== CONTAINER ====================== */
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
 /* UTILITIES - SR-ONLY */
 .sr-only {
   position: absolute;

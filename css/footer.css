@@ -93,7 +93,7 @@
 .subscribe-form {
   display: flex;
   gap: 24px;
-  margin-top: 16px;
+  /* margin-top видалено, оскільки відступ вже є на .social-media-text */
 }
 
 .subscribe-input {

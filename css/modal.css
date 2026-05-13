@@ -1,6 +1,4 @@
-/* ====================== MODAL CSS ====================== */
-/* Стилі для модального вікна */
-
+/* ====================== MODAL ====================== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -27,12 +25,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fcfcfc;
+  background: #fff;
   width: 100%;
   box-shadow:
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 4px;
   max-width: 408px;
   min-height: 584px;
@@ -43,7 +41,7 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   background-color: #e7e9fc;
   border-radius: 50%;
@@ -58,6 +56,7 @@
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 .modal-close-btn:hover .close-icon,
@@ -81,7 +80,7 @@
   margin-bottom: 16px;
 }
 
-/* FORM */
+/* ====================== FORM ====================== */
 .form-field {
   margin-bottom: 8px;
 }
@@ -200,7 +199,7 @@
 }
 
 .checkbox-input:checked + .checkbox-custom .checkbox-icon {
-  fill: #f4f4fd;
+  fill: #ffffff;
 }
 
 .checkbox-icon {
