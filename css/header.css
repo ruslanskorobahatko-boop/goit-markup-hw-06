@@ -13,10 +13,6 @@
 .header-wrapper {
   display: flex;
   align-items: center;
-  min-height: 56px;
-}
-
-.header-logo-wrapper {
 }
 
 .logo {
@@ -28,6 +24,7 @@
   text-transform: uppercase;
   color: #2e2f42;
   display: block;
+  padding: 16px 0;
 }
 .web-accent {
   color: #4d5ae5;
@@ -41,15 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    min-height: 72px;
-  }
   .header-list {
     display: flex;
     align-items: center;
-    padding-left: 120px;
     gap: 40px;
-    padding-right: 120px;
   }
   .header-link {
     font-weight: 500;
@@ -93,18 +85,20 @@
     color: #404bbf;
   }
 
-  /* ADDRESS */
   .header-address {
+    margin-left: auto;
     font-style: normal;
   }
 
   .header-address-list {
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
-
+  .header-logo-wrapper {
+    margin-right: 120px;
+  }
   .header-address-link {
     font-weight: 400;
     font-size: 12px;
@@ -125,12 +119,6 @@
   }
 }
 @media screen and (min-width: 1158px) {
-  .header-logo-wrapper {
-  }
-  .header-list {
-    padding-left: 76px;
-    padding-right: 332px;
-  }
   .header-address-link {
     font-weight: 400;
     font-size: 16px;
@@ -141,5 +129,8 @@
   .header-address-list {
     flex-direction: row;
     gap: 40px;
+  }
+  .header-logo-wrapper {
+    margin-right: 76px;
   }
 }

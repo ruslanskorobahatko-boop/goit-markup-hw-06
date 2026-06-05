@@ -1,8 +1,15 @@
 /* ====================== PORTFOLIO CSS ====================== */
-/* Стилі для секції Portfolio */
 
 .portfolio {
   padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* desktop */
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-bottom: 120px;
+  }
 }
 
 .portfolio-title {
@@ -19,13 +26,17 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-bottom: 80px;
+  margin: 0;
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 42px;
+  margin-bottom: 48px;
+}
+
+/* прибрати відступ у останнього елемента */
+.portfolio-item:last-child {
+  margin-bottom: 0;
 }
 
 .portfolio-item:hover {
@@ -68,12 +79,8 @@
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
+
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -84,6 +91,7 @@
   padding-bottom: 8px;
   padding-left: 16px;
 }
+
 .portfolio-description {
   font-weight: 400;
   font-size: 16px;
@@ -93,15 +101,28 @@
   padding-bottom: 32px;
   padding-left: 16px;
 }
+
+/* ===== TABLET ===== */
 @media screen and (min-width: 768px) {
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    row-gap: 72px;
+    gap: 48px 24px; /* row-gap 48px, column-gap 24px */
   }
+
   .portfolio-item {
-    min-width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }

@@ -2,12 +2,13 @@
 /* Стилі для секції Features */
 
 .features {
+  padding: 96px 0;
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
-  padding: 96px 16px;
+  padding: 0;
 }
 
 .features-item {
@@ -30,7 +31,10 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding: 8px 16px 72px 16px;
+  padding: 0;
+}
+.features-list {
+  gap: 72px;
 }
 .icon-background {
   display: none;
@@ -47,15 +51,10 @@
     justify-content: flex-start;
     padding: 0;
     margin: 0;
-    justify-content: center;
-    padding: 96px 0;
   }
 
   .features-item {
-    flex-basis: calc(50% - 24px);
-    max-width: 280px;
-    max-width: 356px;
-    margin-bottom: 0;
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .description {
@@ -72,10 +71,12 @@
   }
 }
 @media screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
   .features-list {
     align-items: start;
     gap: 24px;
-    padding-bottom: 120px;
   }
   .features-item {
     max-width: 264px;
@@ -94,7 +95,6 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
   }
   .icon-background {
     border: 1px solid #8e8f99;
@@ -106,5 +106,9 @@
     align-items: center;
     margin-bottom: 8px;
     background: #f4f4fd;
+  }
+  .features-item {
+    flex-basis: calc((100% - 72px) / 4);
+    max-width: none;
   }
 }

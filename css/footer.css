@@ -1,18 +1,23 @@
 /* ====================== FOOTER CSS ====================== */
-/* Стилі для футера */
 
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+}
+
 .footer-wrapper {
   display: flex;
-
   flex-direction: column;
-
-  max-width: 320px;
+  gap: 72px;
 }
+
+/* ================= LOGO BLOCK ================= */
 
 .footer-logo-block {
   flex-shrink: 0;
@@ -26,8 +31,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  padding: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -37,11 +41,12 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  text-align: left;
+  text-align: center;
 }
 
+/* ================= SOCIAL BLOCK ================= */
+
 .social-media-footer {
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,23 +57,19 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
-  padding-bottom: 16px;
+  color: #ffffff;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .icongroup-socmedia-2 {
   display: flex;
-  align-items: center;
   gap: 16px;
-  padding-bottom: 72px;
 }
 
 .icon-socmedia-2 {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  align-items: center;
 }
 
 .icon-socmedia-2 a {
@@ -91,9 +92,9 @@
   fill: #f4f4fd;
 }
 
-/* Блок підписки у футері */
+/* ================= SUBSCRIBE BLOCK ================= */
+
 .footer-subscribe {
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,13 +102,13 @@
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
-  align-items: center;
   flex-direction: column;
+  gap: 16px;
 }
 
 .subscribe-input {
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -118,7 +119,7 @@
   letter-spacing: 0.04em;
   color: #ffffff;
   outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms ease;
 }
 
 .subscribe-input::placeholder {
@@ -146,8 +147,7 @@
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  padding: 8px 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms ease;
 }
 
 .subscribe-btn:hover,
@@ -158,48 +158,70 @@
 .subscribe-icon {
   fill: #ffffff;
 }
+
+/* ================= TABLET ================= */
+
 @media screen and (min-width: 768px) {
-  .footer-logo-and-text {
-    display: flex;
-    gap: 24px;
-    padding-left: 108px;
+  .footer-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: flex-start;
   }
+
+  .footer-logo-block,
+  .social-media-footer {
+    flex-basis: calc((100% - 24px) / 2);
+    align-items: flex-start;
+  }
+
+  .footer-subscribe {
+    align-items: flex-start;
+    flex-basis: 100%;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+
+  .social-media-text {
+    text-align: left;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
+/* ================= DESKTOP ================= */
+
+@media screen and (min-width: 1158px) {
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
   .footer-logo-block {
     max-width: 264px;
   }
-  .footer-wrapper {
-    max-width: 768px;
+
+  .social-media-footer {
+    margin-left: 120px;
   }
-  .footer-logo {
-    text-align: start;
-  }
-  .subscribe-form {
-    flex-direction: row;
-    gap: 24px;
-  }
+
   .footer-subscribe {
-    align-items: start;
-    padding-left: 108px;
-  }
-  .social-media-footer {
-    align-items: start;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .footer-logo-and-text {
-    flex-direction: row;
-    padding: 0px;
-    gap: 0;
-    padding-right: 80px;
-  }
-  .footer-wrapper {
-    display: flex;
-
-    flex-direction: row;
-
-    max-width: 1158px;
-  }
-  .social-media-footer {
-    padding-left: 120px;
+    margin-left: auto;
+    align-items: flex-start;
   }
 }
