@@ -32,7 +32,9 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li>
-              <a class="header-link active" href="./index.html">Studio</a>
+              <a class="header-link-1 header-link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
               <a class="header-link" href="./portfolio.html">Portfolio</a>
@@ -129,14 +131,40 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/mark-guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teams/mark-guerrero.jpg    1x,
+                    ./images/teams/mark-guerrero@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teams/mark-guerrero.jpg    1x,
+                    ./images/teams/mark-guerrero@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teams/mark-guerrero-m.jpg    1x,
+                    ./images/teams/mark-guerrero@2x-m.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/mark-guerrero.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="team-item-text">
-                <h3 class="title">Mark Guerrero</h3>
-                <p class="description">Product Designer</p>
+                <h3 class="team-subtitle">Mark Guerrero</h3>
+                <p class="team-description">Product Designer</p>
                 <ul class="icongroup-socmedia-1">
                   <li class="icon-socmedia-1">
                     <a href="#" aria-label="Instagram">
@@ -170,10 +198,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teams/tom-ford.jpg    1x,
+                    ./images/teams/tom-ford@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teams/tom-ford.jpg    1x,
+                    ./images/teams/tom-ford@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teams/tom-ford-m.jpg    1x,
+                    ./images/teams/tom-ford@2x-m.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/teams/tom-ford-m.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
+
               <div class="team-item-text">
-                <h3 class="title">Tom Ford</h3>
-                <p class="description">Frontend Developer</p>
+                <h3 class="team-subtitle">Tom Ford</h3>
+                <p class="team-description">Frontend Developer</p>
                 <ul class="icongroup-socmedia-1">
                   <li class="icon-socmedia-1">
                     <a href="#" aria-label="Instagram">
@@ -207,14 +266,39 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/camila-garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teams/camila-garcia.jpg    1x,
+                    ./images/teams/camila-garcia@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teams/camila-garcia.jpg    1x,
+                    ./images/teams/camila-garcia@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teams/camila-garcia-m.jpg    1x,
+                    ./images/teams/camila-garcia@2x-m.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/camila-garcia.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <div class="team-item-text">
-                <h3 class="title">Camila Garcia</h3>
-                <p class="description">Marketing</p>
+                <h3 class="team-subtitle">Camila Garcia</h3>
+                <p class="team-description">Marketing</p>
                 <ul class="icongroup-socmedia-1">
                   <li class="icon-socmedia-1">
                     <a href="#" aria-label="Instagram">
@@ -248,14 +332,39 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/daniel-wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teams/daniel-wilson.jpg    1x,
+                    ./images/teams/daniel-wilson@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teams/daniel-wilson.jpg    1x,
+                    ./images/teams/daniel-wilson@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teams/daniel-wilson-m.jpg    1x,
+                    ./images/teams/daniel-wilson@2x-m.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/daniel-wilson.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
               <div class="team-item-text">
-                <h3 class="title">Daniel Wilson</h3>
-                <p class="description">UI Designer</p>
+                <h3 class="team-subtitle">Daniel Wilson</h3>
+                <p class="team-description">UI Designer</p>
                 <ul class="icongroup-socmedia-1">
                   <li class="icon-socmedia-1">
                     <a href="#" aria-label="Instagram">
@@ -298,104 +407,245 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Banking-App.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/banking-app.jpg    1x,
+                      ./images/portfolio/banking-app@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/banking-app.jpg    1x,
+                      ./images/portfolio/banking-app@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/banking-app-m.jpg    1x,
+                      ./images/portfolio/banking-app@2x-m.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/Banking-App-m.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <div class="portfolio-overlay">
-                  <p>Banking App</p>
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Banking App</h3>
-                <p class="description">App</p>
+                <h3 class="portfolio-subtitle">Banking App</h3>
+                <p class="portfolio-description">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Cashless-Payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
-                <div class="portfolio-overlay">
-                  <p>Cashless Payment</p>
-                </div>
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/cashless-payment.jpg    1x,
+                      ./images/portfolio/cashless-payment@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/cashless-payment.jpg    1x,
+                      ./images/portfolio/cashless-payment@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/cashless-payment-m.jpg    1x,
+                      ./images/portfolio/cashless-payment@2x-m.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/Cashless-Payment.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Cashless Payment</h3>
-                <p class="description">Marketing</p>
+                <h3 class="portfolio-subtitle">Cashless Payment</h3>
+                <p class="portfolio-description">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Meditation-App.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
-                <div class="portfolio-overlay">
-                  <p>Meditation App</p>
-                </div>
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/Meditation-App.jpg    1x,
+                      ./images/portfolio/Meditation-App@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Meditation-App.jpg    1x,
+                      ./images/portfolio/Meditation-App@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Meditation-App-m.jpg    1x,
+                      ./images/portfolio/Meditation-App@2x-m.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/Meditation-App.jpg"
+                    alt="Meditation App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Meditation App</h3>
-                <p class="description">App</p>
+                <h3 class="portfolio-subtitle">Meditation App</h3>
+                <p class="portfolio-description">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Taxi-Service.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
-                <div class="portfolio-overlay">
-                  <p>Taxi Service</p>
-                </div>
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/taxi-service.jpg    1x,
+                      ./images/portfolio/taxi-service@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/taxi-service.jpg    1x,
+                      ./images/portfolio/taxi-service@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/taxi-service-m.jpg    1x,
+                      ./images/portfolio/taxi-service@2x-m.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/portfolio/taxi-service-m.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Taxi Service</h3>
-                <p class="description">Marketing</p>
+                <h3 class="portfolio-subtitle">Taxi Service</h3>
+                <p class="portfolio-description">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Screen-Illustrations.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
-                <div class="portfolio-overlay">
-                  <p>Screen Illustrations</p>
-                </div>
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/Screen-Illustrations.jpg    1x,
+                      ./images/portfolio/Screen-Illustrations@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Screen-Illustrations.jpg    1x,
+                      ./images/portfolio/Screen-Illustrations@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Screen-Illustrations-m.jpg    1x,
+                      ./images/portfolio/Screen-Illustrations@2x-m.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/Screen-Illustrations.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Screen Illustrations</h3>
-                <p class="description">Design</p>
+                <h3 class="portfolio-subtitle">Screen Illustrations</h3>
+                <p class="portfolio-description">Design</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img
-                  src="./images/Online-Courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
-                <div class="portfolio-overlay">
-                  <p>Online Courses</p>
-                </div>
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/Online-Courses.jpg    1x,
+                      ./images/portfolio/Online-Courses@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Online-Courses.jpg    1x,
+                      ./images/portfolio/Online-Courses@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Online-Courses-m.jpg    1x,
+                      ./images/portfolio/Online-Courses@2x-m.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/portfolio/Online-Courses.jpg"
+                    alt="Online Courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
               </div>
               <div class="portfolio-item-text">
-                <h3 class="title">Online Courses</h3>
-                <p class="description">Marketing</p>
+                <h3 class="portfolio-subtitle">Online Courses</h3>
+                <p class="portfolio-description">Marketing</p>
               </div>
             </li>
           </ul>
@@ -405,48 +655,52 @@
 
     <footer class="footer" id="footer">
       <div class="container footer-wrapper">
-        <div class="footer-logo-block">
-          <a class="logo footer-logo" href="./index.html">
-            <span class="web-accent">Web</span>Studio
-          </a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        <div class="footer-logo-and-text">
+          <div class="footer-logo-block">
+            <a class="logo footer-logo" href="./index.html">
+              <span class="web-accent">Web</span>Studio
+            </a>
+            <p class="footer-text"></p>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social-media-footer">
+            <p class="social-media-text">Social media</p>
+            <ul class="icongroup-socmedia-2">
+              <li class="icon-socmedia-2">
+                <a href="#" aria-label="Instagram">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-socmedia-2">
+                <a href="#" aria-label="Twitter">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-socmedia-2">
+                <a href="#" aria-label="Facebook">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-socmedia-2">
+                <a href="#" aria-label="LinkedIn">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="social-media-footer">
-          <p class="social-media-text">Social media</p>
-          <ul class="icongroup-socmedia-2">
-            <li class="icon-socmedia-2">
-              <a href="#" aria-label="Instagram">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-socmedia-2">
-              <a href="#" aria-label="Twitter">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-socmedia-2">
-              <a href="#" aria-label="Facebook">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-socmedia-2">
-              <a href="#" aria-label="LinkedIn">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-subscribe">
           <p class="social-media-text">Subscribe</p>
           <form class="subscribe-form" name="subscribe-form">

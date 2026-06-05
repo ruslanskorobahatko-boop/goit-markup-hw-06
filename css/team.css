@@ -2,7 +2,7 @@
 /* Стилі для секції Team */
 
 .team {
-  padding: 120px 0;
+  padding-top: 96px;
   background: #f4f4fd;
 }
 
@@ -13,12 +13,12 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  padding: 72px 0 96px 0;
 }
 
 .team-item {
@@ -31,6 +31,9 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: 264px;
+  height: 428px;
+  margin-bottom: 72px;
 }
 
 .team-item-text {
@@ -69,4 +72,41 @@
 
 .icon-socmedia-1 svg {
   fill: #f4f4fd;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  padding: 8px 16px;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .team-item {
+    min-width: 264px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+    padding: 72px 0 120px 0;
+  }
 }
