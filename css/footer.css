@@ -217,6 +217,7 @@
   .footer-wrapper {
     flex-wrap: nowrap;
     align-items: flex-start;
+    column-gap: 0;
   }
 
   .footer-logo-block {
@@ -235,6 +236,7 @@
     flex: 0 0 auto;
   }
 }
+
 /* ================= СПЕЦІАЛЬНЕ ПРАВИЛО ДЛЯ ПЛАНШЕТА (768–1157px) ================= */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
