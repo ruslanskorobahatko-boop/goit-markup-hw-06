@@ -12,7 +12,7 @@
   max-width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding: 112px 0; /* вертикальні внутрішні відступи замість height */
+  padding: 72px 0; /* змінено: 72px зверху та знизу (було 112px) */
 }
 
 .hero-title {
@@ -22,13 +22,13 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding: 0 52px; /* прибрано padding-top, залишено лише горизонтальні відступи */
+  padding: 0 52px;
   margin-bottom: 72px;
 }
 
 .hero-button {
   border-radius: 4px;
-  padding: 16px; /* виправлено: додано одиницю вимірювання px */
+  padding: 16px;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -60,7 +60,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    padding: 112px 0; /* однакові вертикальні відступи, прибрано height та padding-bottom */
+    padding: 112px 0;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/header/people-office-t.jpg");
@@ -73,7 +73,7 @@
     text-align: center;
     color: #fff;
     max-width: 496px;
-    padding: 0; /* прибрано padding-top: 112px */
+    padding: 0;
     margin: 0 auto 36px;
   }
 }
@@ -93,7 +93,7 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/header/people-office.jpg");
     max-width: 1440px;
-    padding: 188px 0; /* однакові вертикальні відступи, прибрано height та padding-bottom */
+    padding: 188px 0;
   }
   .hero-title {
     font-weight: 700;
@@ -103,8 +103,8 @@
     text-align: center;
     color: #fff;
     width: 496px;
-    padding: 0; /* прибрано padding: 188px 0 48px 0 */
-    margin: 0 auto 48px; /* нижній відступ 48px збережено */
+    padding: 0;
+    margin: 0 auto 48px;
   }
 }
 

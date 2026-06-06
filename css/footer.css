@@ -26,7 +26,7 @@
   max-width: 264px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left; /* логотип та текст вирівняні ліворуч, блок по центру */
+  text-align: left;
 }
 
 .footer-logo {
@@ -47,7 +47,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  text-align: left; /* параграф вирівняний ліворуч */
+  text-align: left;
 }
 
 /* ================= SOCIAL BLOCK ================= */
@@ -55,7 +55,7 @@
 .social-media-footer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* на мобільному – центруємо іконки */
+  align-items: center;
 }
 
 .social-media-text {
@@ -65,7 +65,7 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  text-align: center; /* на мобільному заголовок по центру */
+  text-align: center;
 }
 
 .icongroup-socmedia-2 {
@@ -106,13 +106,13 @@
 .footer-subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center; /* на мобільному центруємо форму */
+  align-items: center;
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* на мобільному вертикальний інтервал 16px (було 24px) */
+  gap: 16px;
 }
 
 .subscribe-input {
@@ -155,7 +155,6 @@
   border: none;
   border-radius: 4px;
   transition: background-color 250ms ease;
-  /* margin: 0 auto; – більше не потрібно, центрує батьківський align-items */
 }
 
 .subscribe-btn:hover,
@@ -180,29 +179,29 @@
 
   .footer-logo-block {
     max-width: 264px;
-    margin-left: 0; /* скасовуємо центрування блоку */
+    margin-left: 0;
     margin-right: 0;
     text-align: left;
     flex: 1 1 calc((100% - 24px) / 2);
   }
 
   .social-media-footer {
-    align-items: flex-start; /* вирівнювання на початок */
+    align-items: flex-start;
     flex: 1 1 calc((100% - 24px) / 2);
   }
 
   .social-media-text {
-    text-align: left; /* заголовок ліворуч */
+    text-align: left;
   }
 
   .footer-subscribe {
-    align-items: flex-start; /* вирівнювання на початок */
+    align-items: flex-start;
     flex: 1 1 100%;
   }
 
   .subscribe-form {
     flex-direction: row;
-    gap: 24px; /* горизонтальний інтервал 24px (було 16px) */
+    gap: 24px;
   }
 
   .subscribe-input {
@@ -216,7 +215,7 @@
   .footer-wrapper {
     flex-wrap: nowrap;
     align-items: flex-start;
-    /* прибираємо justify-content: space-between */
+    column-gap: 0;
   }
 
   .footer-logo-block {
@@ -227,11 +226,11 @@
 
   .social-media-footer {
     flex: 0 0 auto;
-    margin-right: 120px; /* фіксована відстань 120px між логотипом та соцмережами */
+    margin-right: 120px;
   }
 
   .footer-subscribe {
-    margin-left: auto; /* притискає блок підписки до правого краю */
+    margin-left: auto;
     flex: 0 0 auto;
   }
 }
