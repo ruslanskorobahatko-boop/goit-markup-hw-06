@@ -41,6 +41,42 @@
             </li>
             <li><a class="header-link" href="./contacts.html">Contacts</a></li>
           </ul>
+          <div>
+            <button
+              type="button"
+              class="header-menu-btn"
+              onclick="
+                document.getElementById('mobile-menu').classList.add('is-open')
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.59961 6.00078C3.59961 5.68252 3.72604 5.3773 3.95108 5.15225C4.17612 4.92721 4.48135 4.80078 4.79961 4.80078H19.1996C19.5179 4.80078 19.8231 4.92721 20.0481 5.15225C20.2732 5.3773 20.3996 5.68252 20.3996 6.00078C20.3996 6.31904 20.2732 6.62427 20.0481 6.84931C19.8231 7.07435 19.5179 7.20078 19.1996 7.20078H4.79961C4.48135 7.20078 4.17612 7.07435 3.95108 6.84931C3.72604 6.62427 3.59961 6.31904 3.59961 6.00078Z"
+                  fill="#2F2F37"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.59961 12.0008C3.59961 11.6825 3.72604 11.3773 3.95108 11.1523C4.17612 10.9272 4.48135 10.8008 4.79961 10.8008H19.1996C19.5179 10.8008 19.8231 10.9272 20.0481 11.1523C20.2732 11.3773 20.3996 11.6825 20.3996 12.0008C20.3996 12.319 20.2732 12.6243 20.0481 12.8493C19.8231 13.0744 19.5179 13.2008 19.1996 13.2008H4.79961C4.48135 13.2008 4.17612 13.0744 3.95108 12.8493C3.72604 12.6243 3.59961 12.319 3.59961 12.0008Z"
+                  fill="#2F2F37"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.59961 18.0008C3.59961 17.6825 3.72604 17.3773 3.95108 17.1523C4.17612 16.9272 4.48135 16.8008 4.79961 16.8008H19.1996C19.5179 16.8008 19.8231 16.9272 20.0481 17.1523C20.2732 17.3773 20.3996 17.6825 20.3996 18.0008C20.3996 18.319 20.2732 18.6243 20.0481 18.8493C19.8231 19.0744 19.5179 19.2008 19.1996 19.2008H4.79961C4.48135 19.2008 4.17612 19.0744 3.95108 18.8493C3.72604 18.6243 3.59961 18.319 3.59961 18.0008Z"
+                  fill="#2F2F37"
+                />
+              </svg>
+            </button>
+          </div>
         </nav>
 
         <address class="header-address">
@@ -78,7 +114,7 @@
 
       <section class="features" id="features">
         <div class="container">
-          <h2 class="features-title sr-only">Our Features</h2>
+          <h2 class="features-title sr-only">Our features</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="icon-background">
@@ -421,7 +457,6 @@
                       ./images/portfolio/Banking-App@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -429,7 +464,6 @@
                       ./images/portfolio/Banking-App@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -444,6 +478,7 @@
                     height="300"
                   />
                 </picture>
+
                 <div class="portfolio-overlay">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -452,11 +487,13 @@
                   </p>
                 </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Banking App</h3>
                 <p class="portfolio-description">App</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <picture>
@@ -467,7 +504,6 @@
                       ./images/portfolio/Cashless-Payment@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -475,7 +511,6 @@
                       ./images/portfolio/Cashless-Payment@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -490,12 +525,18 @@
                     height="300"
                   />
                 </picture>
+
+                <div class="portfolio-overlay">
+                  <p>Cashless Payment App Design Concept</p>
+                </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Cashless Payment</h3>
                 <p class="portfolio-description">Marketing</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <picture>
@@ -506,7 +547,6 @@
                       ./images/portfolio/Meditation-App@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -514,7 +554,6 @@
                       ./images/portfolio/Meditation-App@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -529,12 +568,18 @@
                     height="300"
                   />
                 </picture>
+
+                <div class="portfolio-overlay">
+                  <p>Meditation App UI Design</p>
+                </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Meditation App</h3>
                 <p class="portfolio-description">App</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <picture>
@@ -545,7 +590,6 @@
                       ./images/portfolio/taxi-service@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -553,7 +597,6 @@
                       ./images/portfolio/taxi-service@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -561,7 +604,6 @@
                       ./images/portfolio/taxi-service@2x-m.jpg 2x
                     "
                   />
-
                   <img
                     src="./images/portfolio/taxi-service-m.jpg"
                     alt="Taxi Service"
@@ -569,12 +611,18 @@
                     height="300"
                   />
                 </picture>
+
+                <div class="portfolio-overlay">
+                  <p>Taxi Service App Concept</p>
+                </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Taxi Service</h3>
                 <p class="portfolio-description">Marketing</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <picture>
@@ -585,7 +633,6 @@
                       ./images/portfolio/Screen-Illustrations@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -593,7 +640,6 @@
                       ./images/portfolio/Screen-Illustrations@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -608,12 +654,18 @@
                     height="300"
                   />
                 </picture>
+
+                <div class="portfolio-overlay">
+                  <p>Screen Illustrations Design</p>
+                </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Screen Illustrations</h3>
                 <p class="portfolio-description">Design</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
                 <picture>
@@ -624,7 +676,6 @@
                       ./images/portfolio/Online-Courses@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -632,7 +683,6 @@
                       ./images/portfolio/Online-Courses@2x.jpg 2x
                     "
                   />
-
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -640,7 +690,6 @@
                       ./images/portfolio/Online-Courses@2x-m.jpg 2x
                     "
                   />
-
                   <img
                     src="./images/portfolio/Online-Courses.jpg"
                     alt="Online Courses"
@@ -648,7 +697,12 @@
                     height="300"
                   />
                 </picture>
+
+                <div class="portfolio-overlay">
+                  <p>Online Courses UI Concept</p>
+                </div>
               </div>
+
               <div class="portfolio-item-text">
                 <h3 class="portfolio-subtitle">Online Courses</h3>
                 <p class="portfolio-description">Marketing</p>
@@ -661,54 +715,61 @@
 
     <footer class="footer" id="footer">
       <div class="container footer-wrapper">
-        <div class="footer-logo-and-text">
-          <div class="footer-logo-block">
-            <a class="logo footer-logo" href="./index.html">
-              <span class="web-accent">Web</span>Studio
-            </a>
-            <p class="footer-text"></p>
-            <p class="footer-text">
-              Increase the flow of customers and sales for your business with
-              digital marketing & growth solutions.
-            </p>
-          </div>
-          <div class="social-media-footer">
-            <p class="social-media-text">Social media</p>
-            <ul class="icongroup-socmedia-2">
-              <li class="icon-socmedia-2">
-                <a href="#" aria-label="Instagram">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-socmedia-2">
-                <a href="#" aria-label="Twitter">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-socmedia-2">
-                <a href="#" aria-label="Facebook">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-socmedia-2">
-                <a href="#" aria-label="LinkedIn">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- LOGO BLOCK -->
+        <div class="footer-logo-block">
+          <a class="logo footer-logo" href="./index.html">
+            <span class="web-accent">Web</span>Studio
+          </a>
+
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
         </div>
 
+        <!-- SOCIAL BLOCK -->
+        <div class="social-media-footer">
+          <p class="social-media-text">Social media</p>
+
+          <ul class="icongroup-socmedia-2">
+            <li class="icon-socmedia-2">
+              <a href="#" aria-label="Instagram">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-socmedia-2">
+              <a href="#" aria-label="Twitter">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-socmedia-2">
+              <a href="#" aria-label="Facebook">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-socmedia-2">
+              <a href="#" aria-label="LinkedIn">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SUBSCRIBE BLOCK -->
         <div class="footer-subscribe">
           <p class="social-media-text">Subscribe</p>
+
           <form class="subscribe-form" name="subscribe-form">
             <input
               type="email"
@@ -717,6 +778,7 @@
               placeholder="E-mail"
               required
             />
+
             <button type="submit" class="subscribe-btn">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
@@ -806,6 +868,40 @@
 
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu-backdrop"
+      onclick="this.classList.remove('is-open')"
+    >
+      <div class="mobile-menu" onclick="event.stopPropagation()">
+        <!-- Close Button -->
+        <button
+          type="button"
+          class="mobile-close-btn"
+          onclick="
+            document.getElementById('mobile-menu').classList.remove('is-open')
+          "
+        >
+          <svg width="8" height="8" class="close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-list">
+            <li><a href="./index.html">Studio</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="mobile-address">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </address>
       </div>
     </div>
   </body>
