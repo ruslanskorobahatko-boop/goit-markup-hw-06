@@ -23,6 +23,10 @@
 
 .footer-logo-block {
   flex-shrink: 0;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* логотип та текст вирівняні ліворуч, блок по центру */
 }
 
 .footer-logo {
@@ -43,6 +47,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  text-align: left; /* параграф вирівняний ліворуч */
 }
 
 /* ================= SOCIAL BLOCK ================= */
@@ -50,6 +55,7 @@
 .social-media-footer {
   display: flex;
   flex-direction: column;
+  align-items: center; /* на мобільному – центруємо іконки */
 }
 
 .social-media-text {
@@ -59,6 +65,7 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center; /* на мобільному заголовок по центру */
 }
 
 .icongroup-socmedia-2 {
@@ -99,12 +106,13 @@
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center; /* на мобільному центруємо форму */
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px; /* на мобільному вертикальний інтервал 16px (було 24px) */
 }
 
 .subscribe-input {
@@ -147,6 +155,7 @@
   border: none;
   border-radius: 4px;
   transition: background-color 250ms ease;
+  /* margin: 0 auto; – більше не потрібно, центрує батьківський align-items */
 }
 
 .subscribe-btn:hover,
@@ -157,27 +166,10 @@
 .subscribe-icon {
   fill: #ffffff;
 }
-.footer-logo-block,
-.social-media-footer,
-.footer-subscribe {
-  text-align: center;
-  align-items: center;
-}
-.social-media-footer,
-.footer-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.subscribe-btn {
-  margin: 0 auto;
-}
-/* ================= TABLET ================= */
+
+/* ================= TABLET (≥768px) ================= */
 
 @media screen and (min-width: 768px) {
-  .footer-logo-block {
-    max-width: 264px;
-  }
   .footer-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,18 +178,31 @@
     align-items: flex-start;
   }
 
-  .footer-logo-block,
-  .social-media-footer {
+  .footer-logo-block {
+    max-width: 264px;
+    margin-left: 0; /* скасовуємо центрування блоку */
+    margin-right: 0;
+    text-align: left;
     flex: 1 1 calc((100% - 24px) / 2);
   }
 
+  .social-media-footer {
+    align-items: flex-start; /* вирівнювання на початок */
+    flex: 1 1 calc((100% - 24px) / 2);
+  }
+
+  .social-media-text {
+    text-align: left; /* заголовок ліворуч */
+  }
+
   .footer-subscribe {
+    align-items: flex-start; /* вирівнювання на початок */
     flex: 1 1 100%;
   }
 
   .subscribe-form {
     flex-direction: row;
-    gap: 16px;
+    gap: 24px; /* горизонтальний інтервал 24px (було 16px) */
   }
 
   .subscribe-input {
@@ -205,28 +210,34 @@
   }
 }
 
-/* ================= DESKTOP ================= */
+/* ================= DESKTOP (≥1158px) ================= */
 
 @media screen and (min-width: 1158px) {
   .footer-wrapper {
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: flex-start;
+    /* прибираємо justify-content: space-between */
   }
 
   .footer-logo-block {
     flex: 0 0 264px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .social-media-footer {
     flex: 0 0 auto;
+    margin-right: 120px; /* фіксована відстань 120px між логотипом та соцмережами */
   }
 
   .footer-subscribe {
-    margin-left: auto;
+    margin-left: auto; /* притискає блок підписки до правого краю */
     flex: 0 0 auto;
   }
 }
+
+/* ================= СПЕЦІАЛЬНЕ ПРАВИЛО ДЛЯ ПЛАНШЕТА (768–1157px) ================= */
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-wrapper {
     max-width: 584px;

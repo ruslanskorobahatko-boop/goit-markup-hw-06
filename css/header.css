@@ -13,6 +13,7 @@
 .header-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* розносимо логотип і кнопку по краях */
 }
 
 .logo {
@@ -26,9 +27,24 @@
   display: block;
   padding: 16px 0;
 }
+
 .web-accent {
   color: #4d5ae5;
 }
+
+/* ================= БУРГЕР-КНОПКА ================= */
+.header-menu-btn {
+  background-color: transparent; /* прозорий фон */
+  border: none; /* прибираємо рамку */
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
 .header-list {
   display: none;
 }
@@ -37,12 +53,18 @@
   display: none;
 }
 
+/* ================= ПЛАНШЕТ (≥768px) ================= */
 @media screen and (min-width: 768px) {
+  .header-menu-btn {
+    display: none; /* ховаємо бургер-кнопку на планшеті й десктопі */
+  }
+
   .header-list {
     display: flex;
     align-items: center;
     gap: 40px;
   }
+
   .header-link {
     font-weight: 500;
     font-size: 16px;
@@ -96,9 +118,11 @@
     align-items: center;
     gap: 12px;
   }
+
   .header-logo-wrapper {
     margin-right: 120px;
   }
+
   .header-address-link {
     font-weight: 400;
     font-size: 12px;
@@ -112,12 +136,9 @@
   .header-address-link:focus {
     color: #404bbf;
   }
-  .header-address-link-wrapper {
-    display: flex;
-  }
-  .header-logo-wrapper {
-  }
 }
+
+/* ================= ДЕСКТОП (≥1158px) ================= */
 @media screen and (min-width: 1158px) {
   .header-address-link {
     font-weight: 400;
@@ -126,10 +147,12 @@
     letter-spacing: 0.02em;
     color: #434455;
   }
+
   .header-address-list {
     flex-direction: row;
     gap: 40px;
   }
+
   .header-logo-wrapper {
     margin-right: 76px;
   }

@@ -11,8 +11,8 @@
   background-size: cover;
   max-width: 320px;
   margin: 0 auto;
-  height: 432px;
   text-align: center;
+  padding: 112px 0; /* вертикальні внутрішні відступи замість height */
 }
 
 .hero-title {
@@ -22,13 +22,13 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding: 72px 52px 0;
+  padding: 0 52px; /* прибрано padding-top, залишено лише горизонтальні відступи */
   margin-bottom: 72px;
 }
 
 .hero-button {
   border-radius: 4px;
-  padding: 16 72px;
+  padding: 16px; /* виправлено: додано одиницю вимірювання px */
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -47,6 +47,7 @@
 .hero-button:focus {
   background: #404bbf;
 }
+
 @media screen and (min-resolution: 2dppx) {
   .hero {
     background-image:
@@ -54,11 +55,12 @@
       url("../images/header/people-office@2x-m.jpg");
   }
 }
+
+/* ================= TABLET ================= */
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    height: 436px;
-    padding-bottom: 112px;
+    padding: 112px 0; /* однакові вертикальні відступи, прибрано height та padding-bottom */
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/header/people-office-t.jpg");
@@ -71,10 +73,11 @@
     text-align: center;
     color: #fff;
     max-width: 496px;
-    padding-top: 112px;
+    padding: 0; /* прибрано padding-top: 112px */
     margin: 0 auto 36px;
   }
 }
+
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image:
@@ -82,17 +85,17 @@
       url("../images/header/people-office@2x-t.jpg");
   }
 }
+
+/* ================= DESKTOP ================= */
 @media screen and (min-width: 1158px) {
   .hero {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/header/people-office.jpg");
     max-width: 1440px;
-    height: 600px;
-    padding-bottom: 188px;
+    padding: 188px 0; /* однакові вертикальні відступи, прибрано height та padding-bottom */
   }
   .hero-title {
-    padding: 188px 0 48px 0;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
@@ -100,9 +103,11 @@
     text-align: center;
     color: #fff;
     width: 496px;
-    margin: auto;
+    padding: 0; /* прибрано padding: 188px 0 48px 0 */
+    margin: 0 auto 48px; /* нижній відступ 48px збережено */
   }
 }
+
 @media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .hero {
     background-image:
