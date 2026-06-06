@@ -104,7 +104,7 @@
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -157,10 +157,27 @@
 .subscribe-icon {
   fill: #ffffff;
 }
-
+.footer-logo-block,
+.social-media-footer,
+.footer-subscribe {
+  text-align: center;
+  align-items: center;
+}
+.social-media-footer,
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-btn {
+  margin: 0 auto;
+}
 /* ================= TABLET ================= */
 
 @media screen and (min-width: 768px) {
+  .footer-logo-block {
+    max-width: 264px;
+  }
   .footer-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -208,5 +225,11 @@
   .footer-subscribe {
     margin-left: auto;
     flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-wrapper {
+    max-width: 584px;
+    margin: 0 auto;
   }
 }
